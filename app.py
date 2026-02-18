@@ -13,9 +13,6 @@ output =""
 Multi-line comment or string
 """
 
-
-
-
 """
 DATA TYPE: 
     - TEXT(strings) type: str
@@ -44,10 +41,10 @@ root = -2j
 output = root 
 output = type(root)
 
-
+# type conversion
 numberTwo = 10
 output = type(numberTwo)
-output = numberTwo
+output = numberTwo # variable overriding
 numberTwo = float(numberTwo)
 output = float(numberTwo) # parsing numberTwo variable into a floating point number
 output = type(numberTwo)
@@ -81,20 +78,25 @@ output = name[4] # accessing characters sing indexes
 output = name[1:6]
 output = name[1:6:2]
 output = name
+
+# string methods
 output = name.upper() # changes to uppercase
 output = name.lower() # changes to lowercase
 output = name.startswith("b") # checks whether the first element is macthing the target
 output = name.split(" ") # splits string using the space as the determinant
 output = name
-output = name.replace("e", "u")
-output = name.replace("u", "e")
-output = name.replace("Peter", "Jane")
+output = name.replace("e", "u") # replaces all occurences of the character 'e' with 'u'
+output = name.replace("u", "e") # replaces all occurences of the character 'u' with 'e'
+output = name.replace("Peter", "Jane")  # replaces all occurences of the word 'Peter' with 'Jane'
 
 
-# Operators & Operands
 """
-x + y  = 10 => x and y are operands
-+ and = are operators 
+Operators & Operands: 
+
+For example given the equation: x + y  = 10. x and y are what we call operands
++ and = are operators. Operators allow you to perform a particular action given operands.
+
+Operators can be grouped into types: 
  
  - Arithmetic Operators
      subraction(-)
@@ -103,35 +105,30 @@ x + y  = 10 => x and y are operands
      multiplication (*)
      floor division (//)
      modulus (%)
-
- - Boolean Operators
- - Comparison operators
- - bit-wise operators
+ual to
+ - Boolean Operators (and, or, not)
+ - Comparison operators (less than, equal to, greater than, less than or equal to, greater than or eq)
+ - bit-wise operators (&, | )
 
 """
+
 numberOne = 10
 numberTwo = 20
 
 # ARITHMETIC OPERATORS: -,+,**,/,//,%
-#  subraction(-)
-output = numberOne - numberTwo
-#  addition (+)
-output = numberOne + numberTwo
-#  division (/)
-output = numberOne / numberTwo
-#  multiplication (*)
-output = numberOne * numberTwo
-#  power (**)
-output = numberOne ** numberTwo
-#  floor division (//)' - truncation
-output = numberOne // numberTwo
-#  modulus (%)
+
+output = numberOne - numberTwo#  subraction(-)
+output = numberOne + numberTwo#  addition (+)
+output = numberOne / numberTwo#  division (/)
+output = numberOne * numberTwo#  multiplication (*)
+output = numberOne ** numberTwo#  power (**)
+output = numberOne // numberTwo#  floor division (//)' - truncation
 numberOne=10
 numberTwo=3
-output = numberOne % numberTwo
+output = numberOne % numberTwo#  modulus (%)
 
 # operation = input("Enter math problem: ")
-# output = eval(operation) # this is not recommended becuse malicious attacks
+# output = eval(operation) # this is not recommended because it may allow the user to input dangerous scripts
 
 # LOGIC OPERATORS (and, or, not)
 areLightsOn = True # boolean data type
