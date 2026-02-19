@@ -48,7 +48,6 @@ output = numberTwo # variable overriding
 numberTwo = float(numberTwo)
 output = float(numberTwo) # parsing numberTwo variable into a floating point number
 output = type(numberTwo)
-
 output = int(numberTwo)
 output = type(output)
 
@@ -56,6 +55,7 @@ output =  "120"
 output = type(output)
 output = int("120")
 output = type(output)
+
 numberThree = 100
 output = str(numberThree)
 output = type(output)
@@ -103,12 +103,15 @@ Operators can be grouped into types:
      addition (+)
      division (/)
      multiplication (*)
+     power (**)
      floor division (//)
      modulus (%)
-ual to
+
  - Boolean Operators (and, or, not)
  - Comparison operators (less than, equal to, greater than, less than or equal to, greater than or eq)
  - bit-wise operators (&, | )
+ - membership operators 
+ - Assignment operators
 
 """
 
@@ -116,7 +119,6 @@ numberOne = 10
 numberTwo = 20
 
 # ARITHMETIC OPERATORS: -,+,**,/,//,%
-
 output = numberOne - numberTwo#  subraction(-)
 output = numberOne + numberTwo#  addition (+)
 output = numberOne / numberTwo#  division (/)
@@ -125,15 +127,45 @@ output = numberOne ** numberTwo#  power (**)
 output = numberOne // numberTwo#  floor division (//)' - truncation
 numberOne=10
 numberTwo=3
-output = numberOne % numberTwo#  modulus (%)
+output = numberOne % numberTwo #  modulus (%)
 
 # operation = input("Enter math problem: ")
 # output = eval(operation) # this is not recommended because it may allow the user to input dangerous scripts
 
-# LOGIC OPERATORS (and, or, not)
+# BOOLEAN data type => bool()
 areLightsOn = True # boolean data type
 isRaining = False #boolean data types
  
+
+
+"""
+Comparison operators:
+    - less than(<) 
+    - equal to(==) 
+    - greater than(>)
+    - less than or equal to(<=)
+    - greater than or eq (>=)
+"""
+x = 10 
+y = 20
+output = (x < y) #  less than(<)
+output = (x > y) #  greater than(<)
+output = type(output)
+output = (x >= y) #  greater than or equal to(>=)
+output = (x <= y) #  less than or equal to(<=)
+output = (x == y) #  equality (==)
+
+# LOGIC OPERATORS (and, or, not)
+age =17
+year = 2026
+
+output = ((2027 >= year ) and (age <= 18))
+output = ((2027 > year ) and (age == 18))
+
+output = not ((2027 >= year ) and (age <= 18))
+output = not ((2027 >= year ) or (age <= 18))
+
+
 
 
 print("================================")
