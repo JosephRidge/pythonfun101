@@ -142,6 +142,7 @@ isRaining = False #boolean data types
 Comparison operators:
     - less than(<) 
     - equal to(==) 
+    - not equal to(!=) 
     - greater than(>)
     - less than or equal to(<=)
     - greater than or eq (>=)
@@ -154,6 +155,7 @@ output = type(output)
 output = (x >= y) #  greater than or equal to(>=)
 output = (x <= y) #  less than or equal to(<=)
 output = (x == y) #  equality (==)
+output = (x != y) #  not equal (!=)
 
 # LOGIC OPERATORS (and, or, not)
 age =17
@@ -164,8 +166,63 @@ output = ((2027 > year ) and (age == 18))
 
 output = not ((2027 >= year ) and (age <= 18))
 output = not ((2027 >= year ) or (age <= 18))
+x = 10
+y = 20
+
+## ASSIGNMENT OPERATORS: 
+i = 0
+x = x+y
+x +=y
+# i = i+1
+i += 1
+i *= 3
+i /= 3
+i *=5
+i //=3
+i = 10
+i %= 20
+output =  i 
+
+"""
+ CONDITIONAL STATEMENTS:
+  - if ... else 
+  - if ... elif ... else
+  - match
+"""
+age = 18
+if age > 18 :
+    output = "Able to vote"
+else: 
+    output = "Oops! You cannot vote!"
+
+clothing = "t-shirt"
+color = "green"
+
+if (clothing == "t-shirt") and (color == "white"):
+    output = "Buy the green T-shirt!"
+else: 
+    output = "Do not buy!"
 
 
+clothing = "pants"
+color = "black"
+shoes = "white"
+socks = "happy-socks"
+
+if (clothing == "pants") and (color == "green"):
+    output = "green is good but we would black for the cold!"
+
+elif (clothing =="pants")and (shoes =="brown"):
+    output = "The brown shoes are not part of the wedding theme"
+
+elif (clothing == "pants") and socks.startswith("official"):
+    output = "This is a good start!"
+
+elif (clothing == "pants") and socks.startswith("happy") and (color == "black"):
+    output = "You Nailed it!!"
+else:
+    output = "Oii! we are done!"
+ 
 
 
 print("================================")
