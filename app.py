@@ -188,6 +188,8 @@ output =  i
   - if ... else 
   - if ... elif ... else
   - match
+  - ternary operator
+
 """
 age = 18
 if age > 18 :
@@ -223,8 +225,45 @@ elif (clothing == "pants") and socks.startswith("happy") and (color == "black"):
 else:
     output = "Oii! we are done!"
  
+#  ternary operator
+x = 101
+output = "ten" if (x == 10)  else "not ten" # ternary operator 
 
+# match 
+color = "magenta"
+match(color):
+    case "green":
+        output = "Green Light!"
+    case "yellow":
+        output = "Get Ready!"
+    case "blue":
+        output = "Time to swim!"
+    case _: # this is the default is neither of the elements match
+        output ="I am color-blind!"
+
+start = 0
+end  = 10 
+
+# LOOPS: 
+print("================================")
+# while loop
+# while(start <= end ):
+#     # print("=>  ",start)
+#     if start == 3:
+#         break # stop the loop
+
+name = "Peter Parker"
+
+for i in name:
+    if (i == "r"):
+        continue # skip
+    # print(i)
+
+for num in range(3,10):
+    print(num)
 
 print("================================")
-print(output)# standard output
-print("================================")
+
+# print("================================")
+# print(output)# standard output
+# print("================================")
