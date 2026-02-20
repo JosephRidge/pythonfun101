@@ -23,6 +23,10 @@ Kindly input the number of the operation you want: \n
  
 """)
 output = "" # global variable
+operatorChoice = int(operatorChoice)
+valueOne = int(valueOne)
+valueTwo = int(valueTwo)
+
 
 if (operatorChoice == 1):
     output = valueOne + valueTwo
@@ -38,7 +42,24 @@ elif (operatorChoice == 6):
     output = valueOne // valueTwo
 else: 
     output ="wrong selection!"
-    return 
+
+# incase you chooose a match 
+match(operatorChoice)
+    case 1:
+        output = valueOne + valueTwo
+    case 2:
+        output = valueOne - valueTwo
+    case 3 :
+        output = valueOne * valueTwo
+    case 4:
+        output = valueOne / valueTwo
+    case 5:
+        output = valueOne ** valueTwo
+    case 6:
+        output = valueOne // valueTwo
+    case _:
+        output = "invalid!"
+
 
 print("*****************************")
 print(output)
