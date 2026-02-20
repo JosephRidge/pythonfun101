@@ -171,24 +171,24 @@ y = 20
 
 ## ASSIGNMENT OPERATORS: 
 i = 0
-x = x+y
-x +=y
+x = x+1
+x +=1
 # i = i+1
-i += 1
-i *= 3
-i /= 3
-i *=5
-i //=3
-i = 10
-i %= 20
+i += 1 # same as i = i+1 => 1
+i *= 3 # same as i = i*3 => 3
+i /= 3 # same as i = i/3 => 1
+i *=5 # same as i = i*5 => 5
+i //=3 # same as i = i // 3 =>1
+i = 10 
+i %= 20 #same as i = i%20 => 1
 output =  i 
 
 """
  CONDITIONAL STATEMENTS:
   - if ... else 
+  - ternary operator
   - if ... elif ... else
   - match
-  - ternary operator
 
 """
 age = 18
@@ -196,6 +196,9 @@ if age > 18 :
     output = "Able to vote"
 else: 
     output = "Oops! You cannot vote!"
+
+
+output = "Able to vote" if age>18  else "Oops you cannot vote" # ternary operator
 
 clothing = "t-shirt"
 color = "green"
@@ -241,6 +244,17 @@ match(color):
     case _: # this is the default is neither of the elements match
         output ="I am color-blind!"
 
+age = 12  
+match(age):
+    case 12:
+        output = "able to take Vanilla icecream"
+    case 4:
+        output = "cannot take alot of ice cream"
+    case 1: 
+        output =" do not try"
+    case _:
+        output = "oii drink water!"
+
 start = 0
 end  = 10 
 
@@ -248,21 +262,28 @@ end  = 10
 print("================================")
 # while loop
 # while(start <= end ):
-#     # print("=>  ",start)
+#     print("=>  ",start)
 #     if start == 3:
 #         break # stop the loop
+#     start+=1
 
-name = "Peter Parker"
+name = "Peter Parker" # list of characters
 
-for i in name:
-    if (i == "r"):
-        continue # skip
-    # print(i)
+for letter in name:
+    if letter == "k":
+        break
+    print(letter)
 
-for num in range(3,10):
-    print(num)
+# for num in range(3,10):
+#     print(num)
 
 print("================================")
+
+
+
+
+
+
 
 # print("================================")
 # print(output)# standard output
