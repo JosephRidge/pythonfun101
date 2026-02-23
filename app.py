@@ -316,13 +316,13 @@ def addition(x, y):
 def morningGreetings():
     print("Good! Morning!")
 
-morningGreetings() # calling the function
+# morningGreetings() # calling the function
 
 
 def personalMorningGreetings(name, age):
     print(f"Good morning {name}! I heard you are {age} yrs old!")
 
-personalMorningGreetings("Andrew",12)
+# personalMorningGreetings("Andrew",12)
 
 
 """
@@ -347,7 +347,7 @@ def login(name, email , password):
         print("pass!")
     else:
         print("email not found")
-    if password = "1234556":
+    if password == "1234556":
         print("welcome back!")
     else:
         print("wrong credentials")
@@ -356,7 +356,32 @@ def signSheet(name, signature):
     print(name)
     print(signature)
 
+#  lambda function : => anonymous function
+# lambda params: expression
 
-# print("================================")
-# print(output)# standard output
-# print("================================")
+x = lambda a,b : a + b
+
+stringSize = lambda a : len(a)+1
+
+greeting = lambda name : f"Welcome home {name}"
+
+output = x(10,12)
+output = stringSize('Amigos')
+output = greeting("Wanjiru")
+
+"""
+Summary: 
+ - Variables
+ - Data Types
+ - Loops
+ - control flows
+ - Functions: 
+    - Anonymous(lambda)
+    - Paramterized functions
+    - Non-paramaterized functions
+"""
+
+
+print("================================")
+print(output)# standard output
+print("================================")
