@@ -259,7 +259,7 @@ start = 0
 end  = 10 
 
 # LOOPS: 
-print("================================")
+# print("================================")
 # while loop
 # while(start <= end ):
 #     print("=>  ",start)
@@ -269,20 +269,92 @@ print("================================")
 
 name = "Peter Parker" # list of characters
 
-for letter in name:
-    if letter == "k":
-        break
-    print(letter)
+# for letter in name:
+#     if letter == "k":
+#         break
+#     print(letter)
 
 # for num in range(3,10):
 #     print(num)
 
-print("================================")
+# print("================================")
+
+
+
+"""
+FUNCTIONS: 
+serves the purpose of doing a single task
+    - parameterized functions
+    - non-parameterized functions
+    - lambda functions
+"""
+# simple function: 
+
+#  defining a function 
+def greetings():
+    print("Good morning!")
+
+# greetings() # calling a function
+
+#  parameterized function
+def welcomeMessage(name):
+    print("Welcome home " + name)
+    print(f"Welcome home {name}"  )
+
+def addition(x, y):
+    print(x+y)
+
+# addition(12,12)
+# welcomeMessage(name="Mary")# calling the funciton
+# welcomeMessage(name="Ray")# calling the funciton
 
 
 
 
 
+# wish someone good morning
+def morningGreetings():
+    print("Good! Morning!")
+
+morningGreetings() # calling the function
+
+
+def personalMorningGreetings(name, age):
+    print(f"Good morning {name}! I heard you are {age} yrs old!")
+
+personalMorningGreetings("Andrew",12)
+
+
+"""
+LOGIN: 
+1. FORM(UI): 
+    - username
+    - useemail
+    - password
+
+2. PYTHON: 
+    - takes your credentials 
+    - checks whether they exist
+    - log you in
+""" 
+
+def login(name, email , password):
+    if name == "Wanjiru":
+        print("Pass")
+    else:
+        print("username does not exist")
+    if email == "wanjiru254@example.com":
+        print("pass!")
+    else:
+        print("email not found")
+    if password = "1234556":
+        print("welcome back!")
+    else:
+        print("wrong credentials")
+
+def signSheet(name, signature):
+    print(name)
+    print(signature)
 
 
 # print("================================")

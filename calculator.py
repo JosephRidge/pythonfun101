@@ -7,6 +7,10 @@
 
 """
 
+def addition(x,y):
+    valueSum = x + y
+    return valueSum
+
 print("============================================")
 valueOne = input("Enter the first operand: ")
 valueTwo = input("Enter the second operand: ")
@@ -29,7 +33,7 @@ valueTwo = int(valueTwo)
 
 
 if (operatorChoice == 1):
-    output = valueOne + valueTwo
+    output = addition(valueOne, valueTwo)
 elif (operatorChoice == 2):
     output = valueOne - valueTwo
 elif (operatorChoice == 3):
@@ -44,8 +48,8 @@ else:
     output ="wrong selection!"
 
 # incase you chooose a match 
-match(operatorChoice)
-    case 1:
+match(operatorChoice):
+    case 1 :
         output = valueOne + valueTwo
     case 2:
         output = valueOne - valueTwo
