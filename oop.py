@@ -1,36 +1,38 @@
-class Car: 
-    #  attributes
-    def __init__(self,name, color, model, size):
-        self.name = name
-        self.color = color
-        self.model = model
+
+"""
+CLASS: blueprint that helps create an real object
+"""
+
+# defining a Class
+class Monitor:
+    # attribute
+    # shape ="rectangular"
+    # resolution="1080"
+    # size = "large"
+    # yom = 2020
+
+#  an initialize invoked the moment the object is created
+    def __init__(self, shape, resolution,size, yom, color):
+        self.shape = shape
+        self.resolution = resolution
         self.size = size
+        self.yom = yom 
+        self.color = color 
 
-    # behavoirs - methods
+    # methods (function taht resides inside a class)
+    def switchOnMonitor(self):
+        print("turning on monitor")
 
-    def carDescription(self):
-       print(f"This is a {self.model} it is of color {self.color}")
+    def displayInterface(self):
+        print("diplaying OS")
 
+# OBJECTS: Instances of classes ("a real world thing")
+# create objects
+hpMonitor = Monitor()
+dellMonitor = Monitor()
 
+hpMonitor.switchOnMonitor()
+dellMonitor.switchOnMonitor()
 
-toyota = Car("Buddy", "green","Toyota", "4X4")
-
-#  accesed the attributes
-output = toyota.name
-output = toyota.color
-output = toyota.model
-
-#  access ythe behaviours:
-
-toyota.carDescription()
-
-mazda = Car("Kadogo", "blue","MAZDA - XR", "4X4")
-mazda.carDescription()
-
-output = f" FIRST CAR: {mazda.name} SECOND-CAR: {toyota.name}"
-mazda.name
-# INHERITANCE:  You have parent class and a child class( the child class inherits evryhitng form the parent class)
-
-print("======================")
-print(output)
-print("======================")
+print(f"===> {hpMonitor.shape}")
+print(f"===> {dellMonitor.shape}")
