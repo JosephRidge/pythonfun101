@@ -28,11 +28,18 @@ class Monitor:
 
 # OBJECTS: Instances of classes ("a real world thing")
 # create objects
-hpMonitor = Monitor()
-dellMonitor = Monitor()
+hpMonitor = Monitor("rectangular", 1080,21, 2000,"gray")
+dellMonitor = Monitor(shape="oval", resolution=1280, size =34, yom =2050, color ="black" )
 
 hpMonitor.switchOnMonitor()
 dellMonitor.switchOnMonitor()
 
 print(f"===> {hpMonitor.shape}")
 print(f"===> {dellMonitor.shape}")
+
+
+"""
+- ENCAPSULATION
+- INHERITANCE
+- POLYMORPHISM
+"""
