@@ -71,10 +71,51 @@ class Tuktuk(Vehicle): # inheritance, the parent is Vehicle an child: Tuktuk
     def wheelNumber(self):
         print(f"Your tuktuk has {self.numberOfWheels} wheels")
 
-redTuktuk = Tuktuk("TKTK", "RED", True,"3")
+# redTuktuk = Tuktuk("TKTK", "RED", True,"3")
 
-redTuktuk.carFeatures()
-redTuktuk.wheelNumber()
+# redTuktuk.carFeatures()
+# redTuktuk.wheelNumber()
+
+
+class Book:
+
+    def __init__(self, title, author, yop, publisher, costOfProduction):
+        self.title = title 
+        self.author = author
+        self.yop = yop
+        self.publisher = publisher
+        self.__costOfProduction = costOfProduction
+
+
+    def aboutBook(self):
+        print(f"TITLE: {self.title}")
+        print(f"AUTHOR: {self.author}")
+        print(f"Year of Publication: {self.yop}")
+        print(f"PUBLISHER: {self.publisher}")
+        print(f"PUBLISHER: {self.__costOfProduction}")
+
+
+alchemist = Book("The Alchemist","Paulo Coelho",1988,"penguine", 250)
+# alchemist.aboutBook()
+
+# print("=======================")
+# print(f"TITLE: {alchemist.title}")
+# print(f"AUTHOR: {alchemist.author}")
+# print(f"Year of Publication: {alchemist.yop}")
+# print(f"PUBLISHER: {alchemist.publisher}")
+# # print(f"PUBLISHER: {alchemist.__costOfProduction} /=")
+# print("=======================")
+
+print("***********************")
+# alchemist.aboutBook()
+print("***********************")
 
 
 
+# age = 10
+# name = "Jane"
+# output = "Mme. " + name + " is " + str(age) + "years old!"
+# output = f"Mme. {name} is {age} years old!"
+output = "John DOe"
+output = len(output)
+print(output)
